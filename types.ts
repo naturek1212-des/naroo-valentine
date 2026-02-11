@@ -2,7 +2,6 @@ export interface ProposalState {
   yesPressed: boolean;
   noCount: number;
   imageUrl: string | null;
-  isLoading: boolean;
 }
 
 export interface ButtonPosition {

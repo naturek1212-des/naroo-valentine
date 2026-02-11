@@ -25,7 +25,7 @@ const SuccessView: React.FC<SuccessViewProps> = ({ imageUrl }) => {
         ))}
       </div>
 
-      <h1 className="text-4xl md:text-6xl font-bold text-pink-600 mb-8 handwritten animate-float z-10">
+      <h1 className="text-4xl md:text-6xl font-bold text-pink-600 mb-8 font-cheonlima animate-float z-10">
         Yay! 사랑해! ❤️
       </h1>
       
@@ -33,7 +33,7 @@ const SuccessView: React.FC<SuccessViewProps> = ({ imageUrl }) => {
         {imageUrl ? (
             <img 
             src={imageUrl} 
-            alt="Happy Cat" 
+            alt="Happy Cats" 
             className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg"
             />
         ) : (
@@ -43,8 +43,8 @@ const SuccessView: React.FC<SuccessViewProps> = ({ imageUrl }) => {
         )}
       </div>
       
-      <p className="mt-8 text-xl text-pink-800 z-10 max-w-md">
-        우리 행복하게 잘 살자! (The cat is very happy now)
+      <p className="mt-8 text-xl text-pink-800 z-10 max-w-md font-bold">
+        천년만년 사랑해~
       </p>
     </div>
   );
