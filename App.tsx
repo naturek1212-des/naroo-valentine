@@ -2,12 +2,19 @@ import React, { useState } from 'react';
 import ProposalCard from './components/ProposalCard';
 import SuccessView from './components/SuccessView';
 
-// Placeholder URLs for the "Attached Images".
-// Since I cannot access your local files directly, I have set up these constants.
-// Please replace these URLs with the actual paths or URLs of the images you want to use.
-// For example: import PROPOSAL_IMG from './assets/proposal.jpg';
-const PROPOSAL_IMG = "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?w=800&q=80"; // Placeholder for Cat with flower/box
-const SUCCESS_IMG = "https://images.unsplash.com/photo-1591871937573-74dbba515c4c?w=800&q=80";   // Placeholder for Cats kissing
+// =================================================================
+// [내 이미지 적용하기]
+// 1. 가지고 계신 사진 파일의 이름을 아래와 같이 변경해주세요.
+//    - 장미꽃 든 사진 이름: naru_flower.jpg
+//    - 뽀뽀하는 사진 이름: naru_kiss.jpg
+// 2. 변경한 사진 파일들을 이 프로젝트 폴더(public 폴더)에 넣어주세요.
+// =================================================================
+
+// 질문 화면 이미지 (로컬 파일)
+const PROPOSAL_IMG = "./naru_flower.jpg"; 
+
+// 성공 화면 이미지 (로컬 파일)
+const SUCCESS_IMG = "./naru_kiss.jpg";   
 
 const App: React.FC = () => {
   const [yesPressed, setYesPressed] = useState(false);
